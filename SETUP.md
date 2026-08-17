@@ -4,7 +4,7 @@ Every command needed, in order. Tested structure: pnpm workspaces + Turborepo,
 two React apps (web, admin), one Express API, four shared packages.
 
 ```
-project-nfc/
+nfc-gifting/
 ├── package.json            root scripts (turbo)
 ├── pnpm-workspace.yaml
 ├── turbo.json
