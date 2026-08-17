@@ -1,0 +1,40 @@
+/* Gifting design system — shared by web + admin */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Outfit:wght@400;500;600&display=swap');
+
+:root {
+  --peacock: #0E3B43;
+  --peacock-deep: #082A31;
+  --peacock-soft: #14525D;
+  --marigold: #F4A825;
+  --marigold-bright: #FFC14D;
+  --petal: #E86A8A;
+  --ivory: #FDF9F3;
+  --ivory-dim: #F3EBDF;
+  --ink: #1E2528;
+  --ink-soft: #4A5568;
+  --line: #E4DCD0;
+  --danger: #C94F4F;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+
+  --radius: 14px;
+  --shadow-lift: 0 18px 50px -18px rgba(8, 42, 49, 0.35);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--ivory);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
