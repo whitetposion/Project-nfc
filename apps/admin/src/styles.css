@@ -1,0 +1,31 @@
+.adm-shell { max-width: 1100px; margin: 0 auto; padding: 28px 24px; }
+.adm-shell h1 { font-family: var(--font-display); font-size: 26px; margin: 0 0 20px; }
+.adm-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.adm-nav { display: flex; gap: 16px; padding: 14px 24px; border-bottom: 1px solid var(--line); }
+.adm-nav a { font: 500 14px var(--font-body); color: var(--ink); text-decoration: none; }
+.adm-nav a:hover { color: var(--peacock); }
+.adm-nav .brand { font-family: var(--font-display); font-style: italic; color: var(--peacock); margin-right: 12px; }
+
+table.adm { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+table.adm th, table.adm td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); font-size: 14px; }
+table.adm th { background: var(--ivory-dim); font-weight: 600; }
+table.adm tr:last-child td { border-bottom: none; }
+
+.adm-btn {
+  padding: 10px 18px; border: none; border-radius: 10px;
+  background: var(--peacock); color: var(--ivory);
+  font: 600 13px var(--font-body); cursor: pointer;
+}
+.adm-btn:hover { background: var(--peacock-soft); }
+.adm-btn.ghost { background: #fff; color: var(--peacock); border: 1.5px solid var(--peacock); }
+.adm-btn.danger { background: #fff; color: var(--danger); border: 1.5px solid var(--danger); }
+
+.adm-form { display: grid; gap: 14px; max-width: 640px; }
+.adm-form label { font: 600 12px var(--font-body); text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); }
+.adm-form input, .adm-form textarea, .adm-form select {
+  width: 100%; padding: 11px 12px; border: 1px solid var(--line);
+  border-radius: 10px; font: 500 14px var(--font-body); outline: none;
+}
+.adm-form input:focus, .adm-form textarea:focus { border-color: var(--peacock-soft); }
+.variant-grid { display: grid; grid-template-columns: 2fr 1fr 1fr auto; gap: 8px; align-items: center; }
+select.status { padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); font: 500 13px var(--font-body); }

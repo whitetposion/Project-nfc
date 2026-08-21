@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 
-// M1: gate this whole app behind profiles.role = 'admin'.
 export function Dashboard() {
   return (
-    <main style={{ padding: 24, fontFamily: "system-ui" }}>
+    <div className="adm-shell">
       <h1>Admin</h1>
-      <ul>
-        <li><Link to="/templates/new">New Template (M3)</Link></li>
-        <li>Products (M2)</li>
-        <li>Orders (M2)</li>
-        <li>NFC Inventory (M6)</li>
-      </ul>
-    </main>
+      <div style={{ display: "flex", gap: 12 }}>
+        <Link to="/products"><button className="adm-btn">Products</button></Link>
+        <Link to="/orders"><button className="adm-btn">Orders</button></Link>
+        <Link to="/templates/new"><button className="adm-btn ghost">Template builder (M3)</button></Link>
+      </div>
+    </div>
   );
 }

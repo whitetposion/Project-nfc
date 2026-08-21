@@ -43,3 +43,13 @@ export const setSuspendedSchema = z.object({
 export const setRoleSchema = z.object({
   role: z.enum(["customer", "admin"])
 });
+
+// ---- Order status (admin) ----
+export const ORDER_STATUSES = [
+  "pending", "paid", "processing", "packed",
+  "shipped", "delivered", "cancelled", "returned"
+] as const;
+
+export const updateOrderStatusSchema = z.object({
+  status: z.enum(ORDER_STATUSES)
+});
